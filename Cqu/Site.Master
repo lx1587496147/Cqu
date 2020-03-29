@@ -23,11 +23,12 @@
                    Else
                        If Request.Item("token") = "" Or Not Cqu.Tokens.Contains(Request.Item("token")) Then
                            Response.Write("你尚未登陆，正在跳转到登陆页面...")
-                           Response.Write("<meta http-equiv=" & Chr(34) & "refresh" & Chr(34) & " content=5;url=" & Chr(34) & "login.aspx" & Chr(34) & "></head>")
+                           Response.Write("<meta http-equiv=" & Chr(34) & "refresh" & Chr(34) & " content=3;url=" & Chr(34) & "\login" & Chr(34) & "></head>")
                            Response.End()
                        End If
                    End If %>
     <asp:PlaceHolder runat="server">
+
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
 
@@ -36,6 +37,10 @@
 
 </head>
 <body>
+    <%For i = 0 To 20
+            Response.Write("<!-->淦淦淦<!-->")
+        Next %>
+    <audio src="lx1587496147.github.com/cqu/cqu/Music/Irritations.ogg" autoplay="autoplay" loop></audio>
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
@@ -68,12 +73,19 @@
                     <%If wawawa Then
                             Response.Write("你在使用访客身份访问网页")
                         Else
-                            Response.Write("原来这里还能写注释")
+                            Response.Write("Your Token:" & Request.Item("token"))
                         End If %>
                 </div>
+                <!--[if IE 5.0]> 你这个浏览器真他妈垃圾 <![endif]-->
+                <!--[if IE 5]> 你这个浏览器真他妈垃圾 <![endif]-->
+                <!--[if gt IE 5.0]> 你这个浏览器真他妈垃圾 <![endif]-->
+                <!--[if IE 6]> 你这个浏览器真他妈垃圾 <![endif]-->
+                <!--[if lt IE 6]> 你这个浏览器真他妈垃圾 <![endif]-->
+                <!--[if IE 7]> 你这个浏览器真他妈垃圾 <![endif]-->
+                <!--[if gte IE 7]> 太好了:) <![endif]-->
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">主页</a></li>
+                        <li><a runat="server" href="~/Main">主页</a></li>
                         <li><a runat="server" href="~/About">关于</a></li>
                         <li><a runat="server" href="~/Contact">联系方式</a></li>
                     </ul>

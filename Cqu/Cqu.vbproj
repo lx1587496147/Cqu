@@ -192,6 +192,7 @@
     <Content Include="AdminMan.aspx" />
     <Content Include="APIDoc\GuLangAPI.aspx" />
     <Content Include="APIDoc\SQImage.aspx" />
+    <Content Include="APIDoc\Warning.mp3" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -212,6 +213,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Connected Services\Application Insights\ConnectedService.json" />
     <Content Include="ApplicationInsights.config" />
+    <Content Include="Music\Irritations.ogg" />
     <Content Include="Site1\APIs\SQImage.aspx" />
     <Content Include="Site1\Apps\GuLang.aspx" />
     <Content Include="Site1\APIs\GuLangAPI.aspx" />
@@ -255,6 +257,8 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Site1\Apps\R18图库.aspx" />
+    <Content Include="Site1\Apps\叽叽喳喳语.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
   </ItemGroup>
@@ -370,6 +374,20 @@
     <Compile Include="Site.Master.vb">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1\Apps\R18图库.aspx.designer.vb">
+      <DependentUpon>R18图库.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site1\Apps\R18图库.aspx.vb">
+      <DependentUpon>R18图库.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Site1\Apps\叽叽喳喳语.aspx.designer.vb">
+      <DependentUpon>叽叽喳喳语.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site1\Apps\叽叽喳喳语.aspx.vb">
+      <DependentUpon>叽叽喳喳语.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.vb">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
